@@ -1,0 +1,5 @@
+/Debug.win32
+/ipch
+*.opensdf
+*.suo
+*.sdf

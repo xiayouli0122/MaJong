@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Common">
+      <UniqueIdentifier>{2d89dbf8-ff6b-42a8-a248-b1ccb21364cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Entity">
+      <UniqueIdentifier>{5cb41b7a-de3a-42fd-822d-d6a8e2f1cc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameCore">
+      <UniqueIdentifier>{0bb0a9fe-7a32-41c9-b812-60c8986e50e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameCore\AI">
+      <UniqueIdentifier>{ed40175b-a6e7-4421-9475-179adb545969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameCore\RuleGen">
+      <UniqueIdentifier>{bb2834cc-6935-4a5a-9369-1081cb34fe87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layer">
+      <UniqueIdentifier>{acc80f7d-6564-4b4d-bee5-a73e994a4fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene">
+      <UniqueIdentifier>{c455cf6a-2242-4ea2-b776-baed0c68a16e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sprite">
+      <UniqueIdentifier>{60ebcb12-75ae-4f88-8508-f0a0adb3833d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sprite\Batch">
+      <UniqueIdentifier>{fb88f29a-771a-4e3a-9f89-c69acd9b31ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\tinyxml">
+      <UniqueIdentifier>{1c166c2f-d3c4-4158-ad98-97ac668a9604}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CallJni.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppMacros.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoreLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\CommonFunction.cpp">
+      <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\md5.cpp">
+      <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\MyTinyXmlParser.cpp">
+      <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity\DeskEntity.cpp">
+      <Filter>Classes\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameCore\AI\Robot.cpp">
+      <Filter>Classes\GameCore\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameCore\GameLogical.cpp">
+      <Filter>Classes\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameCjLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameDesk.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameHelp.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameMenu.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameMessage.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameMGLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GamePause.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameResult.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameSet.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameShowCJ.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GkInfoDetailLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GkInfoLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GuanKaLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\PersonSet.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\SetProgress.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\SplashLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameCjScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameMoreGameScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GkInfoScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GuanKaScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\HelpScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\LoadingScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\MenuScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\PersonSetScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\SetScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Card.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\GameCjSprite.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\GameMGSprite.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\GuanKaSprite.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\MyCard.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\OutCard.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\ScrollWordAndImage.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\SelectSprite.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\ShowCJ.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\SpriteWordAndImage.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Timer.cpp">
+      <Filter>Classes\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\ActionBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\DeskCardsBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\GameCjBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\GameMGBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\GkInfoBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\GuanKaBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\MarkBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\MyCardsBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sprite\Batch\SplashBatch.cpp">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinystr.cpp">
+      <Filter>Classes\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxml.cpp">
+      <Filter>Classes\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlerror.cpp">
+      <Filter>Classes\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlparser.cpp">
+      <Filter>Classes\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\xmltest.cpp">
+      <Filter>Classes\tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CallJni.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoreLayer.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\CommonFunction.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\ConstantDef.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\md5.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\MyTinyXmlParser.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity\DeskEntity.h">
+      <Filter>Classes\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\AI\Robot.h">
+      <Filter>Classes\GameCore\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\RuleGen\RuleDef.h">
+      <Filter>Classes\GameCore\RuleGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\ClientCommon.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\ClientFrameDefs.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\ClientMjDefs.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\ClientScoreDefs.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\GameLogical.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\MjDef.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\ServerFrameDefs.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameCore\TypeDef.h">
+      <Filter>Classes\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameCjLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameDesk.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameHelp.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameMenu.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameMessage.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameMGLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GamePause.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameResult.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameSet.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameShowCJ.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GkInfoDetailLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GkInfoLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GuanKaLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\ParentLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\PersonSet.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\SetProgress.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\SplashLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameCjScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameMoreGameScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GkInfoScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GuanKaScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HelpScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\LoadingScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\MenuScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\PersonSetScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\SetScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Card.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\GameCjSprite.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\GameMGSprite.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\GuanKaSprite.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\MyCard.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\OutCard.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\ScrollWordAndImage.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\SelectSprite.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\ShowCJ.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\SpriteWordAndImage.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Timer.h">
+      <Filter>Classes\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\ActionBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\DeskCardsBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\GameCjBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\GameMGBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\GkInfoBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\GuanKaBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\MarkBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\MyCardsBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sprite\Batch\SplashBatch.h">
+      <Filter>Classes\Sprite\Batch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tinyxml\tinystr.h">
+      <Filter>Classes\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tinyxml\tinyxml.h">
+      <Filter>Classes\tinyxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
