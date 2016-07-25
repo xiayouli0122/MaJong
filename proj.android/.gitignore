@@ -1,0 +1,9 @@
+.settings
+.externalToolBuilders
+/build
+/bin
+/gen
+/obj
+.classpath
+.project
+
