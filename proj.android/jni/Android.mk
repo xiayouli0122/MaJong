@@ -75,8 +75,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES += box2d_static
 LOCAL_WHOLE_STATIC_LIBRARIES += chipmunk_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
-$(call import-add-path,D:\Dev\cocos2d-x-2.2.6)
-$(call import-add-path,D:\Dev\cocos2d-x-2.2.6\cocos2dx\platform\third_party\android\prebuilt)
+$(call import-add-path,$(COCOS2DX_ROOT))
+$(call import-add-path,$(COCOS2DX_ROOT)\cocos2dx\platform\third_party\android\prebuilt)
 
 include $(BUILD_SHARED_LIBRARY)
 
