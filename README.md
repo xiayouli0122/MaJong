@@ -1,0 +1,2 @@
+# MaJong
+A majong code.
