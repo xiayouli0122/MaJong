@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<games>
+<game><id>1</id><name>中国象棋</name><ico>game1.png</ico><url>http://itunes.apple.com/us/app/id425327726?ls=1&amp;mt=8</url></game>
+<game><id>2</id><name>超级斗地主</name><ico>game2.png</ico><url>http://itunes.apple.com/us/app/id443114847?ls=1&amp;mt=8</url></game>
+<game><id>3</id><name>四国军旗</name><ico>game3.png</ico><url>http://itunes.apple.com/us/app/id443120497?ls=1&amp;mt=8</url></game>
+<game><id>4</id><name>超级麻将</name><ico>game4.png</ico><url>http://itunes.apple.com/us/app/id443124711?ls=1&amp;mt=8</url></game>
+<game><id>5</id><name>升级</name><ico>game5.png</ico><url>http://itunes.apple.com/us/app/id443117263?ls=1&amp;mt=8</url></game>
+</games>
