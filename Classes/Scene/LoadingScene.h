@@ -2,6 +2,7 @@
 //  LoadingScene.h
 //  xzdd
 //
+//  启动界面
 //  Created by  on 12-4-9.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
@@ -12,6 +13,7 @@
 #include "cocos2d.h"
 using namespace cocos2d;
 
+//定义了一个TargetScene的枚举
 typedef enum 
 {
 	TargetSceneINVALID = 0,
@@ -39,8 +41,9 @@ public:
 private:
     
     //处理状态定时器，定时调用
-    void undateState(float dt);
-    void ShowAd(float dt);
+    void updateState(float dt);
+    //显示广告？
+	void ShowAd(float dt);
 };
 
 

@@ -1,13 +1,17 @@
 ﻿//
 //  LoadingScene.cpp
 //  xzdd
-//
+//  Loading...界面
 //  Created by  on 12-4-9.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
 #include <iostream>
 #include "LoadingScene.h"
+
+//这里我们看到引入了菜单场景 关卡场景 和 游戏主场景
+//主要是会根据不同的情况，加载完毕后跳转到不同的界面
+//正常，加载进度完毕之后，直接进入到菜单界面（MenuScene）
 #include "GameScene.h"
 #include "GuanKaScene.h"
 #include "MenuScene.h"
@@ -44,8 +48,10 @@ bool LoadingScene::init()
 	{
 		return false;
 	}  
-    
+
+	//创建一个空的精灵对象
     bjSprite = new CCSprite();
+
     
     static bool bFirstCall = true;
     cocos2d::CCSize size = cocos2d::CCDirector::sharedDirector()->getWinSize();
@@ -65,6 +71,7 @@ bool LoadingScene::init()
             bjSprite->initWithFile("Image/Loading/cgclogo.png");
         }
 #elif IS_NON_EGAME
+		CCLOG("IS_NON_EGAME");
         bjSprite->initWithFile("Image/bg_new/loading.jpg");
 #else
         bjSprite->initWithFile("Image/Loading/egamelogo.png");
@@ -77,11 +84,13 @@ bool LoadingScene::init()
 
         if (IS_SPRING)
         {
+			//春节的时候显示一下广告
             schedule( schedule_selector(LoadingScene::ShowAd));  //增加定时器调用
         }
         else
         {
-            schedule( schedule_selector(LoadingScene::undateState));  //增加定时器调用
+			//否则。。。
+            schedule( schedule_selector(LoadingScene::updateState));  //增加定时器调用
         }
         
         return true;
@@ -110,7 +119,8 @@ bool LoadingScene::init()
 
     this->addChild(bjSprite,0);
     
-    schedule( schedule_selector(LoadingScene::undateState));  //增加定时器调用
+	//这里没太看明白，调用updateState的时候为什么没有参数，updateState方法是有参数的
+    schedule( schedule_selector(LoadingScene::updateState));  //增加定时器调用
 	
 	return true;
 }
@@ -120,11 +130,12 @@ void LoadingScene::onExit()
     CCLayer::onExit();
 }
 
-void LoadingScene::undateState(float dt)
+void LoadingScene::updateState(float dt)
 {
     this->unscheduleAllSelectors();
     switch (targetScene) {
         case TargetSceneMainScene:
+			//根据AppDeletgate中初始化的，启动直接进入菜单界面
             CCDirector::sharedDirector()->replaceScene(MenuScene::scene());
             break;
         case TargetSceneGameScene:
@@ -142,10 +153,11 @@ void LoadingScene::undateState(float dt)
 
 void LoadingScene::ShowAd(float dt)
 {
+	CCLOG("showAd...");
     this->unscheduleAllSelectors();
     bjSprite->initWithFile("Image/Loading/ad1.jpg");
     bjSprite->setAnchorPoint(ccp(0, 0));
-    schedule( schedule_selector(LoadingScene::undateState), 1.5);  //增加定时器调用
+    schedule( schedule_selector(LoadingScene::updateState), 1.5);  //增加定时器调用
 }
 
 

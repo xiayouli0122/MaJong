@@ -9,6 +9,7 @@
 #include <iostream>
 #include "GameMessage.h"
 #include "ParentLayer.h"
+#include <limits>
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 #include "CommonFunction.h"
@@ -24,6 +25,7 @@ bool GameMessage::init()
 {
 	//////////////////////////////
 	// 1. super init first
+	//Dialog的背景设置成一个黑色半透明
 	ccColor4B c = {0,0,0,150};
 	if (!CCLayerColor::initWithColor(c) )
 	{
@@ -31,6 +33,7 @@ bool GameMessage::init()
 	}
 	selectedGK = 0;
 	CCSize size = CCDirector::sharedDirector()->getWinSize();
+	CCLOG("Message.size:%f x %f ", size.width, size.height);
 
 	//加入背景
 	bjSprite = new CCSprite();
@@ -39,9 +42,13 @@ bool GameMessage::init()
 	}else {
 		bjSprite->initWithFile(CONS_Image_BG_Message);
 	}
-
+	//背景居中
 	bjSprite->setAnchorPoint(ccp(0.5, 0.5));
 	bjSprite->setPosition(ccp(size.width * 0.5, size.height * 0.5));
+
+	//第二个参数1：表示加载顺序，这里为什么不是0呢？背景层不是应该直接优先加载的吗？
+	//第三个参数1：标记，后面可以通过getChildByTag取回该对象
+	//CCSprite *sp1 = (CCSprite*)this->getChildByTag(tag)
 	this->addChild(bjSprite,1,1);
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -54,7 +61,7 @@ bool GameMessage::init()
 #endif
 
 
-	// 加入一个 label
+	// 加入一个文本框，显示Dialog的消息内容，居中显示
 	label = CCLabelTTF::create(CONS_MESSAGE_ReGK,"Thonburi", CommonFunction::GetValueByDev(13));
 	label->setPosition( ccp(size.width*0.5,size.height*0.55) );
 	this->addChild(label, 2,2);
@@ -65,8 +72,12 @@ bool GameMessage::init()
 
 	pCancel = CCMenuItemSprite::create(ci1,ci12,NULL,this,
 		menu_selector(GameMessage::menuCancelCallback));
-	pCancel->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width*0.62,
-		CCDirector::sharedDirector()->getWinSize().height*0.31) ); 
+	//这里为什么还要获取一次WinSzie呢？前面不是已经获取过一次了吗？HAO蠢
+	//我来改掉
+	//0.62  0.31 好吧
+	pCancel->setPosition(ccp(size.width*0.62, size.height*0.31));
+	/*pCancel->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width*0.62,
+		CCDirector::sharedDirector()->getWinSize().height*0.31) ); */
 
 	// 加入菜单    - 确认
 	CCSprite * ci2 = CCSprite::createWithSpriteFrameName(CONS_Image_Menu_Confirm);
@@ -74,8 +85,9 @@ bool GameMessage::init()
 
 	pConfirm = CCMenuItemSprite::create(ci2,ci22,NULL,this,
 		menu_selector(GameMessage::menuConfirmCallback));
-	pConfirm->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width*0.75,
-		CCDirector::sharedDirector()->getWinSize().height*0.31) ); 
+	pConfirm->setPosition(ccp(size.width*0.75, size.height*0.31));
+	/*pConfirm->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width*0.75,
+		CCDirector::sharedDirector()->getWinSize().height*0.31) ); */
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 	if(IOSCommon::IsIpad3())
@@ -84,10 +96,12 @@ bool GameMessage::init()
 		pCancel->setScale(2.0f);
 	}
 #endif
+
+	//确定和取消两个按钮都创建完了，然后是组成菜单
 	CCMenu* pMenu = CCMenu::create(pCancel,pConfirm,NULL);
 	pMenu->setPosition( CCPointZero );
 	this->addChild(pMenu, 3,3);
-
+	//默认Dialog是不显示的
 	this->setVisible(false);
 
 	return true;
@@ -103,7 +117,7 @@ void GameMessage::SetMessageType(MessageType mType, int nStatus)
 	type = mType;
 	char str[128];
 	switch (type) {
-	case MT_ReGK:
+	case MT_ReGK://重新开始Dialog
 		label->setString(UTEXT(CONS_MESSAGE_ReGK));
 		break;
 	case MT_ContinueGK:
@@ -252,3 +266,20 @@ void GameMessage::setVisibleCancel(bool bVisible)
 {
 	pCancel->setVisible(bVisible);
 }
+
+//void GameMessage::registerWithTouchDispatcher()
+//{
+//	CCLOG("registerWithTouchDispatcher:%d", (numeric_limits<int>::min)());
+//	CCDirector * directory = CCDirector::sharedDirector();
+//
+//	directory->getTouchDispatcher()->addTargetedDelegate(this, kCCMenuHandlerPriority, true);
+//	//cctouchdispatcher *dispatcher = ccdirector::shareddirector()->gettouchdispatcher();
+//	//dispatcher->addtargeteddelegate(this, (numeric_limits<int>::min)(), true);
+//	//CCLayer::registerWithTouchDispatcher();
+//}
+//
+//bool GameMessage::ccTouchBegan(CCTouch * touch,CCEvent * pevent)
+//{
+//	return true;
+//}
+

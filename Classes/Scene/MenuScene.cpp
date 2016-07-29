@@ -477,6 +477,8 @@ bool MenuScene::init()
 			SetIntegerToXML( UD_SINGLE_TIMER, CurrentTimeNow() );
 			CommonFunction::AddCoin( 2000 );
 		}
+		//yuri test
+		gameMessage->SetMessageType( MT_RECEIVE_COIN );
 
         long score = GetIntegerToXML(UD_SINGLE_COIN, COIN_NUM_GIVEN);
         char temp[20];

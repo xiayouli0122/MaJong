@@ -980,6 +980,7 @@ void GameDesk::onResume()
 }
 void GameDesk::onSystemResume()
 {
+	this->setTouchEnabled(false);
     isPause = true;
     gameMenu->Pause();
 }

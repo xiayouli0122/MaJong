@@ -25,6 +25,7 @@ using namespace cocos2d;
 class ParentLayer : public cocos2d::CCLayerColor
 {
 public:
+	//定义了两个纯虚函数，派生类必须重写
     virtual void onCancel(MessageType type) =0;
     virtual void onConfirm(MessageType type) =0;
 };
