@@ -60,6 +60,7 @@ LOCAL_SRC_FILES :=	hellocpp/main.cpp \
 			$(CLASS_PATH)/Scene/SetScene.cpp \
 			$(CLASS_PATH)/Scene/PersonSetScene.cpp \
 			$(CLASS_PATH)/Scene/GameMoreGameScene.cpp \
+			$(CLASS_PATH)/Scene/LoginScene.cpp \
 			$(CLASS_PATH)/GameCore/GameLogical.cpp \
 			$(CLASS_PATH)/GameCore/AI/Robot.cpp \
 			$(CLASS_PATH)/tinyxml/tinystr.cpp \
