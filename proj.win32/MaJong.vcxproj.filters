@@ -228,6 +228,9 @@
     <ClCompile Include="..\Classes\tinyxml\xmltest.cpp">
       <Filter>Classes\tinyxml</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Scene\LoginScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -439,6 +442,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\tinyxml\tinyxml.h">
       <Filter>Classes\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\LoginScene.h">
+      <Filter>Classes\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

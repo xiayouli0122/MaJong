@@ -164,6 +164,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\Scene\GuanKaScene.cpp" />
     <ClCompile Include="..\Classes\Scene\HelpScene.cpp" />
     <ClCompile Include="..\Classes\Scene\LoadingScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\LoginScene.cpp" />
     <ClCompile Include="..\Classes\Scene\MenuScene.cpp" />
     <ClCompile Include="..\Classes\Scene\PersonSetScene.cpp" />
     <ClCompile Include="..\Classes\Scene\SetScene.cpp" />
@@ -239,6 +240,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\Scene\GuanKaScene.h" />
     <ClInclude Include="..\Classes\Scene\HelpScene.h" />
     <ClInclude Include="..\Classes\Scene\LoadingScene.h" />
+    <ClInclude Include="..\Classes\Scene\LoginScene.h" />
     <ClInclude Include="..\Classes\Scene\MenuScene.h" />
     <ClInclude Include="..\Classes\Scene\PersonSetScene.h" />
     <ClInclude Include="..\Classes\Scene\SetScene.h" />

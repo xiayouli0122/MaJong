@@ -21,6 +21,7 @@ typedef enum
 	TargetSceneGameScene,
     TargetSceneGuanKaScene,
 	TargetSceneOverScene,
+	TargetSceneLoginScene,
 
 	TargetSceneMAX,
 } TargetScene;

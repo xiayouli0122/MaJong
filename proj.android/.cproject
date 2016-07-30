@@ -79,14 +79,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="0.756827735.1897288188" name="/" resourcePath="Classes">
-						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.4234409" name="No ToolChain" superClass="org.eclipse.cdt.build.core.prefbase.toolchain" unusedChildren="">
-							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1883771988" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs.1844369373"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.1117238552" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder.991472034"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.847944421" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.2035290044"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.1661989590" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.731367497"/>
-						</toolChain>
-					</folderInfo>
 					<sourceEntries>
 						<entry excluding="cocos2dx|scripting|extensions|Classes" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocos2dx"/>

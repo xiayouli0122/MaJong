@@ -15,6 +15,7 @@
 #include "GameScene.h"
 #include "GuanKaScene.h"
 #include "MenuScene.h"
+#include "LoginScene.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 #include "IOSCommon.h"
@@ -144,7 +145,10 @@ void LoadingScene::updateState(float dt)
         case TargetSceneGuanKaScene:
             CCDirector::sharedDirector()->replaceScene(GuanKaScene::create());
             break;
-            
+		case TargetSceneLoginScene:
+			CCLOG("login");
+			CCDirector::sharedDirector()->replaceScene(LoginScene::scene());
+			break;
            
         default:
             break;

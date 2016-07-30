@@ -65,7 +65,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 	// create a scene. it's an autorelease object
 //	CCScene* pScene = CSceneInit::scene();
 //	CCScene* pScene = SceneLogo::scene();
-	CCScene* pScene = LoadingScene::scene(TargetSceneMainScene);
+	CCLOG("GO TO LOGIN");
+	CCScene* pScene = LoadingScene::scene(TargetSceneLoginScene);
 
 	// run
 	pDirector->runWithScene(pScene);
