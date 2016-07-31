@@ -155,6 +155,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\Layer\GkInfoLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\GuanKaLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\PersonSet.cpp" />
+    <ClCompile Include="..\Classes\Layer\RegisterLayer.cpp" />
     <ClCompile Include="..\Classes\Layer\SetProgress.cpp" />
     <ClCompile Include="..\Classes\Layer\SplashLayer.cpp" />
     <ClCompile Include="..\Classes\Scene\GameCjScene.cpp" />
@@ -231,6 +232,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\Layer\GuanKaLayer.h" />
     <ClInclude Include="..\Classes\Layer\ParentLayer.h" />
     <ClInclude Include="..\Classes\Layer\PersonSet.h" />
+    <ClInclude Include="..\Classes\Layer\RegisterLayer.h" />
     <ClInclude Include="..\Classes\Layer\SetProgress.h" />
     <ClInclude Include="..\Classes\Layer\SplashLayer.h" />
     <ClInclude Include="..\Classes\Scene\GameCjScene.h" />

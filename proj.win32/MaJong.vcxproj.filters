@@ -231,6 +231,9 @@
     <ClCompile Include="..\Classes\Scene\LoginScene.cpp">
       <Filter>Classes\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Layer\RegisterLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -445,6 +448,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Scene\LoginScene.h">
       <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\RegisterLayer.h">
+      <Filter>Classes\Layer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

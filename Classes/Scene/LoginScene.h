@@ -15,11 +15,15 @@
 //同时还需要继承CCEditBoxDelegate
 #include "cocos-ext.h"
 
+#include "../Layer/RegisterLayer.h"
+
 USING_NS_CC;
 USING_NS_CC_EXT;
 
 class LoginScene : public CCLayer, public CCEditBoxDelegate
 {
+	RegisterLayer * registerLayer;
+
 private:
 	//添加两个输入框，一个账号一个密码输入
 	CCEditBox * ebUserName;

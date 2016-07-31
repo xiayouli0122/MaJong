@@ -38,6 +38,10 @@ bool LoginScene::init()
 
 	setKeypadEnabled(true);
 
+	//初始化注册界面
+	registerLayer = RegisterLayer::create();
+	this->addChild(registerLayer, 2);
+
 	CCLOG("and here is LoginScene");
 	CCSprite * bgSprite = CCSprite::create("LoginBg_1.png");
 
@@ -179,6 +183,7 @@ void LoginScene::onMenuRegisterCallback(CCObject* pSender)
 {
 	//注册按钮点击
 	CCLOG("on register menu clicked");
+	registerLayer->setVisible(true);
 }
 
 void LoginScene::onMenuQuickGameCallback(CCObject* pSender)
